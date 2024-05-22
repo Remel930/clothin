@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add product</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+    <div class= "container">
+        <div class="row justify-content-center">
+            <div class= "card  my-auto shadow">
+                <div class="card-header text-center bg-primary text-white">
+                    <h2>add product</h2>
+                </div>
+                <div class="card-body">
+                    <form action="add product for manufacturer.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Name of cloth</label>
+                            <input type="text" id="name" class="form-control" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div>
+                                <label for="male" class="radio-inline"><input type="radio" name="gender" value="m" id="male">Male</label>
+                                <label for="female" class="radio-inline"><input type="radio" name="gender" value="f" id="female">Female</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sizes">Sizes</label>
+                            <div>
+                                <label for="size_xs" class="checkbox-inline"><input type="checkbox" name="sizes[]" value="xs" id="size_xs">Extra Small</label>
+                                <label for="size_s" class="checkbox-inline"><input type="checkbox" name="sizes[]" value="s" id="size_s">Small</label>
+                                <label for="size_m" class="checkbox-inline"><input type="checkbox" name="sizes[]" value="m" id="size_m">Medium</label>
+                                <label for="size_l" class="checkbox-inline"><input type="checkbox" name="sizes[]" value="l" id="size_l">Large</label>
+                                <label for="size_xl" class="checkbox-inline"><input type="checkbox" name="sizes[]" value="xl" id="size_xl">Extra Large</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cost">Cost</label>
+                            <input type="text" id="cost" class="form-control" name="cost" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="stocks">Stocks</label>
+                            <input type="text" id="stocks" class="form-control" name="stocks" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="productlevel">Product level</label>
+                            <input type="text" id="productlevel" class="form-control" name="productlevel" required />
+                        </div>
+                        <input type="submit" class="btn btn-primary w-100" value="Add" />
+                    </form>
+                </div>
+                <a href="manufacturer.php">go back to manufacturer</a>
+            </div>
+           
+                
+</form>
+        </div>
+    </div>
+</body>
+</html>
+
+
