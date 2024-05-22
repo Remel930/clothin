@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+    <div class= "container">
+        <div class="row justify-content-center">
+            <div class= "card  my-auto shadow">
+                <div class="card-header text-center bg-primary text-white">
+                    <h2>Registration</h2>
+                </div>
+                <div class="card-body">
+                    <form action="connect.php" method="post">
+                        <div class="form-group">
+                            <label for="Fname">First name</label>
+                            <input type="Fname" id="Fname" class="form-control" name="Fname" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="Lname">Last name</label>
+                            <input type="Lname" id="Lname" class="form-control" name="Lname" required/>
+                         </div>
+                         <div class="form-group">
+                            <label for="roles">Roles</label>
+                            <div>
+                                <label for="manufacturer" class="radio-inline"><input type="radio" name="roles" value="m" id="manufacturer">Manufacturer</label>
+                                <label for="distributer" class="radio-inline"><input type="radio" name="roles" value="d" id="distributer">Distributer</label>
+                                <label for="retailer" class="radio-inline"><input type="radio" name="roles" value="r" id="retailer">Retailer</label>
+                                <label for="supplier" class="radio-inline"><input type="radio" name="roles" value="s" id="supplier">Supplier</label>
+                                <label for="admin" class="radio-inline"><input type="radio" name="roles" value="a" id="admin">Admin</label>
+                        </div>
+                         <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" name="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" class="form-control" name="password" required/>
+                         </div>
+                         <div class="form-group">
+                            <label for="number">Number</label>
+                            <input type="sumber" id="number" class="form-control" name="number" required />
+                        </div>
+                         
+                            </div>
+                         <input type="submit" class="btn btn-primary w-100" value="register" >
+
+                        </div>
+                        <a href="login.html">Login</a>
+
+            </div>
+</form>
+        </div>
+    </div>
+</body>
+</html>
+
+
